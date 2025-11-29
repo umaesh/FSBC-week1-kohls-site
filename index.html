@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kohls" />
+    <title>Kohl's | Shop Clothing...</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top-nav">
+        <img class="logo" src="./kohls.png" alt="Kohl's Logo">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="What are you looking for today" class="search" />
+        </div>
+        <div class="right-nav">
+          <div class="sign-in-nav">
+            <a href="#"><i class="fas fa-user"></i> Sign In</a>
+          </div>
+          <div class="my-list-nav">
+            <a href="#"><i class="fas fa-heart"></i> My List</a>
+          </div>
+          <div class="cart-nav">
+            <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-nav">
+        <div class="bottom-nav-left">
+          <button class="shop-by-btn">
+            <i class="fas fa-bars"></i> Shop By Category
+          </button>
+          <button class="my-store-btn">
+            <i class="fas fa-star"></i> My Store: Select Store
+          </button>
+        </div>
+        <div class="bottom-nav-right">
+          <button class="nav-btn">
+            <i class="fas fa-credit-card"></i> Kohl's Card
+          </button>
+          <button class="nav-btn">
+            <i class="fas fa-gift"></i> Baby Registry
+          </button>
+          <button class="nav-btn">
+            <i class="fas fa-dollar-sign"></i> Kohl's Coupons
+          </button>
+          <button class="nav-btn">
+            <i class="fas fa-question-circle"></i> Help
+          </button>
+        </div>
+      </div>
+
+      <div class="offers-section">
+        <div class="offers-intro">
+          <h3 class="greeting">
+            <span>Hi, <span class="name">friend</span>!</span>
+            <span class="message">Shop today's best <br>ways to save.</span>
+          </h3>
+        </div>
+        <div class="slider-container">
+          <button type="button" class="slider-btn prev" aria-label="Scroll left." disabled>
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <ul class="coupon-list">
+            <li class="coupon red">
+              <div>
+                <p class="title">$10 <span class="subtitle">off</span></p>
+                <p class="desc">when you spend a minimum of $50 <span class="bold">Today only.</span></p>
+                <p class="code">SHOP10NOW</p>
+              </div>
+            </li>
+            <li class="coupon red">
+              <div>
+                <p class="title">15% <span class="subtitle">off</span></p>
+                <p class="desc">in store & online. <br><span class="bold">Ends today.</span></p>
+                <p class="code">GET15</p>
+              </div>
+            </li>
+            <li class="coupon green">
+              <div>
+                <p class="title">10% <span class="subtitle">off</span></p>
+                <p class="desc">your floor care, kitchen and furniture purchase.</p>
+                <p class="code">Kohl's Rewards®</p>
+              </div>
+            </li>
+            <li class="coupon green">
+              <div>
+                <p class="title"><span class="bold">Earn $15</span> <span class="subtitle">Kohl's Cash®</span></p>
+                <p class="desc">for every $50 spent. <br><span class="bold">Ends today.</span></p>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="slider-btn next" aria-label="Scroll right.">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <div class="product-item large">
+          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600&h=800&fit=crop" alt="Product 1">
+          <div class="product-info">
+            <p class="product-name">Women's Fashion</p>
+            <p class="product-price">$49.99</p>
+          </div>
+        </div>
+        <div class="product-item small">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop" alt="Product 2">
+          <div class="product-info">
+            <p class="product-name">Sneakers</p>
+            <p class="product-price">$79.99</p>
+          </div>
+        </div>
+        <div class="product-item small">
+          <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=400&fit=crop" alt="Product 3">
+          <div class="product-info">
+            <p class="product-name">Sunglasses</p>
+            <p class="product-price">$29.99</p>
+          </div>
+        </div>
+        <div class="product-item medium">
+          <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=400&fit=crop" alt="Product 4">
+          <div class="product-info">
+            <p class="product-name">Home Decor</p>
+            <p class="product-price">$89.99</p>
+          </div>
+        </div>
+        <div class="product-item tall">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=600&fit=crop" alt="Product 5">
+          <div class="product-info">
+            <p class="product-name">Designer Dress</p>
+            <p class="product-price">$129.99</p>
+          </div>
+        </div>
+        <div class="product-item small">
+          <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=400&h=400&fit=crop" alt="Product 6">
+          <div class="product-info">
+            <p class="product-name">Watch</p>
+            <p class="product-price">$199.99</p>
+          </div>
+        </div>
+        <div class="product-item medium">
+          <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=600&h=400&fit=crop" alt="Product 7">
+          <div class="product-info">
+            <p class="product-name">Bedding Set</p>
+            <p class="product-price">$119.99</p>
+          </div>
+        </div>
+        <div class="product-item small">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=400&fit=crop" alt="Product 8">
+          <div class="product-info">
+            <p class="product-name">Handbag</p>
+            <p class="product-price">$89.99</p>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

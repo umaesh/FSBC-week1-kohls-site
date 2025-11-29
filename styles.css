@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.top-nav {
+  height: 100px;
+  width: 100%;
+  border-bottom: thin solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  width: 200px;
+  margin: 10px;
+}
+
+.right-nav {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  padding-right: 15px;
+  margin-left: auto;
+}
+
+.sign-in-nav a,
+.my-list-nav a,
+.cart-nav a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 0 15px;
+}
+
+.sign-in-nav a i,
+.my-list-nav a i,
+.cart-nav a i {
+  font-size: 24px;
+}
+
+.search-container {
+  position: relative;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container i {
+  position: absolute;
+  left: 15px;
+  color: #666;
+  font-size: 16px;
+}
+
+.search {
+  height: 40px;
+  width: 400px;
+  padding: 0 10px 0 45px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.bottom-nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: thin solid #e0e0e0;
+}
+
+.bottom-nav-left,
+.bottom-nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.shop-by-btn,
+.my-store-btn,
+.nav-btn {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shop-by-btn:hover,
+.my-store-btn:hover,
+.nav-btn:hover {
+  text-decoration: underline;
+}
+
+.offers-section {
+  display: flex;
+  padding: 30px 20px;
+  gap: 30px;
+  background: #f5f5f5;
+}
+
+.offers-intro {
+  min-width: 250px;
+}
+
+.greeting {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.greeting .name {
+  font-weight: bold;
+}
+
+.greeting .message {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.slider-btn {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.slider-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.coupon-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.coupon-list::-webkit-scrollbar {
+  display: none;
+}
+
+.coupon {
+  min-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.coupon.red {
+  border: 2px solid #c00;
+}
+
+.coupon.green {
+  border: 2px solid #0a8a0a;
+}
+
+.coupon .title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.coupon .subtitle {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.coupon .desc {
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.coupon .bold {
+  font-weight: 600;
+}
+
+.coupon .code {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 15px;
+  padding: 30px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.product-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.product-item:hover img {
+  transform: scale(1.05);
+}
+
+.product-item.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.product-item.medium {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.product-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.product-item.tall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c00;
+}
